@@ -28,7 +28,8 @@ main {
             text-align: right;
             padding-left: 2rem;
             padding-right: 1rem;
-            
+            width: 100%;
+            height: auto;
         }
         
         
@@ -94,9 +95,28 @@ h5{
         font-size: 3rem;
         font-weight: 300;
         max-width: 50%;
+        
     }
 }
 
 footer {
     background: map-get($colors , primaryColor);
+}
+@media screen and (max-width: 720px) /*mobile*/ {
+   nav{
+    img{
+                width: 80px;
+                height: 70px;
+            }
+    }
+    #titulo{
+     font-size: 1.5rem;
+     top: 20%;
+    }
+ }
+@media screen and (max-width: 1024px) /*mobile*/ {
+   #titulo{
+    font-size: 2rem;
+    top: 20%;
+   }
 }
