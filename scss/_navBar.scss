@@ -6,9 +6,11 @@ header {
     z-index: 1;
 
     .nav {
+        height: 6rem;
         #logo {
             font-size: 1.9rem;
             color: map-get($colors, secondaryColor);
+            height: auto;
         }
 
         display: flex;
