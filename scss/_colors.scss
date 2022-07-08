@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Quicksand:wght@300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap');
+$fonts:(
+titleFont: 'Satisfy',
+contentFont: 'Poppins',
+);
 $colors: (
     primaryColor: #ec1f26,
     secondaryColor: #e5bf27,
     tColor: #f9f1f1,
     fColor: #710000,
 );
+.titleSection {
+    border-bottom: 0.2rem solid;
+    bottom: 0;
+
+}

@@ -1,17 +1,37 @@
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
+}
+
+nav {
+    #titleLogo {
+        font-family: map-get($fonts, titleFont);
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        color: map-get($colors, secondaryColor);
+    }
+
+    #navbarNav{
+        ul {
+        li {
+            a:hover   {
+                color: map-get($colors, secondaryColor);
+            }
+        }
+    }
+}
 }
 
 main {
     overflow-x: hidden;
     background: map-get($colors, tColor);
+    font-family: map-get($fonts, contentFont);
 
     section {
         padding: 2rem
     }
 
     article {
-        background-color: rgba(0, 0, 0, 0.9);
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -23,7 +43,6 @@ main {
             width: 80%;
             padding: 1rem;
             line-height: 3rem;
-            color: map-get($colors, tColor);
             font-size: 1.5rem;
 
 
@@ -43,43 +62,15 @@ main {
     h2 {
         width: 30%;
         margin-bottom: 2rem;
-
-        &:nth-of-type(1) {
-            border-bottom: 0.2rem solid;
-            bottom: 0;
-            border-bottom-color: #FF3E74;
-        }
-
-        &:nth-of-type(2) {
-            border-bottom: 0.2rem solid;
-            border-bottom-color: #ffff00;
-        }
-
-        &:nth-of-type(3) a:hover {
-            border-bottom: 0.2rem solid;
-            border-bottom-color: #3EE6FF;
-        }
-
-        &:nth-of-type(4) a:hover {
-            border-bottom: 0.2rem solid;
-            border-bottom-color: #3EFF5E;
-        }
-
-        &:nth-of-type(5) a:hover {
-            border-bottom: 0.2rem solid;
-            border-bottom-color: #FFF43E;
-        }
-
-        &:nth-of-type(5) {
-            margin-right: 0rem;
-        }
     }
+
 
     h5 {
         color: aliceblue;
         text-align: center;
     }
 
+    /*Title Index*/
     .contenedor {
         position: relative;
         display: inline-block;
@@ -103,13 +94,33 @@ main {
         font-size: 4rem;
         font-weight: 300;
         max-width: 70%;
-        #sabor{
-            color: map-get($colors ,secondaryColor );
+
+        #sabor {
+            color: map-get($colors , secondaryColor);
             font-weight: 500;
         }
     }
 
 }
+
+
+/*Nosotros*/
+#nosotros {
+    h2 {
+        @extend .titleSection;
+        border-bottom-color: map-get($colors, primaryColor);
+
+    }
+}
+
+/*Productos*/
+#productos {
+    h2 {
+        @extend .titleSection;
+        border-bottom-color: map-get($colors, secondaryColor);
+    }
+}
+
 
 footer {
     background: map-get($colors , primaryColor);
@@ -119,6 +130,12 @@ footer {
 
 /*mobile*/
     {
+    #titulo {
+        font-size: 2rem;
+        top: 10%;
+
+    }
+
     /*nav*/
     nav {
         img {
@@ -127,40 +144,40 @@ footer {
         }
     }
 
-    #titulo {
-        font-size: 1rem;
-        top: 15%;
-    }
+
     /*Nosotros*/
-    #nosotros{
-        div{
+    #nosotros {
+        div {
             padding: 1rem;
-            p{
+
+            p {
                 text-align: justify;
                 width: 100%;
-            margin: 0rem;
+                margin: 0rem;
             }
         }
     }
 
     /*productos*/
-    #productos{
-        div{
+    #productos {
+        div {
             padding: 1rem;
-        p{  
-            text-align: justify;
-            width: 100%;
+
+            p {
+                text-align: justify;
+                width: 100%;
+            }
         }
-    }
     }
 }
 
 
-@media screen and (max-width: 720px)
-
-/*mobile*/
-    {
+@media screen and (max-width: 720px) {
     nav {
+        #titleLogo {
+            display: none;
+        }
+
         img {
             width: 80px;
             height: 70px;
@@ -183,7 +200,7 @@ footer {
 /*mobile*/
     {
     #titulo {
-        font-size: 2rem;
+        font-size: 4rem;
         top: 20%;
     }
 }

@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Quicksand:wght@300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap");
+.titleSection, #productos h2, #nosotros h2 {
+  border-bottom: 0.2rem solid;
+  bottom: 0;
+}
+
 header {
   background: #ec1f26;
   position: sticky;
@@ -35,15 +42,26 @@ header .nav ul li a {
   display: none;
 }
 
+nav #titleLogo {
+  font-family: "Satisfy";
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #e5bf27;
+}
+nav #navbarNav ul li a:hover {
+  color: #e5bf27;
+}
+
 main {
   overflow-x: hidden;
   background: #f9f1f1;
+  font-family: "Poppins";
+  /*Title Index*/
 }
 main section {
   padding: 2rem;
 }
 main article {
-  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,7 +72,6 @@ main article p {
   width: 80%;
   padding: 1rem;
   line-height: 3rem;
-  color: #f9f1f1;
   font-size: 1.5rem;
 }
 main article img {
@@ -67,30 +84,6 @@ main article img {
 main h2 {
   width: 30%;
   margin-bottom: 2rem;
-}
-main h2:nth-of-type(1) {
-  border-bottom: 0.2rem solid;
-  bottom: 0;
-  border-bottom-color: #FF3E74;
-}
-main h2:nth-of-type(2) {
-  border-bottom: 0.2rem solid;
-  border-bottom-color: #ffff00;
-}
-main h2:nth-of-type(3) a:hover {
-  border-bottom: 0.2rem solid;
-  border-bottom-color: #3EE6FF;
-}
-main h2:nth-of-type(4) a:hover {
-  border-bottom: 0.2rem solid;
-  border-bottom-color: #3EFF5E;
-}
-main h2:nth-of-type(5) a:hover {
-  border-bottom: 0.2rem solid;
-  border-bottom-color: #FFF43E;
-}
-main h2:nth-of-type(5) {
-  margin-right: 0rem;
 }
 main h5 {
   color: aliceblue;
@@ -123,20 +116,30 @@ main .textoEncima #sabor {
   font-weight: 500;
 }
 
+/*Nosotros*/
+#nosotros h2 {
+  border-bottom-color: #ec1f26;
+}
+
+/*Productos*/
+#productos h2 {
+  border-bottom-color: #e5bf27;
+}
+
 footer {
   background: #ec1f26;
 }
 
 @media screen and (max-width: 520px) {
+  #titulo {
+    font-size: 2rem;
+    top: 10%;
+  }
+
   /*nav*/
   nav img {
     width: 80px;
     height: 70px;
-  }
-
-  #titulo {
-    font-size: 1rem;
-    top: 15%;
   }
 
   /*Nosotros*/
@@ -159,6 +162,9 @@ footer {
   }
 }
 @media screen and (max-width: 720px) {
+  nav #titleLogo {
+    display: none;
+  }
   nav img {
     width: 80px;
     height: 70px;
@@ -176,7 +182,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   #titulo {
-    font-size: 2rem;
+    font-size: 4rem;
     top: 20%;
   }
 }
