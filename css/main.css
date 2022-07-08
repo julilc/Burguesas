@@ -128,6 +128,7 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
+  /*nav*/
   nav img {
     width: 80px;
     height: 70px;
@@ -136,6 +137,25 @@ footer {
   #titulo {
     font-size: 1rem;
     top: 15%;
+  }
+
+  /*Nosotros*/
+  #nosotros div {
+    padding: 1rem;
+  }
+  #nosotros div p {
+    text-align: justify;
+    width: 100%;
+    margin: 0rem;
+  }
+
+  /*productos*/
+  #productos div {
+    padding: 1rem;
+  }
+  #productos div p {
+    text-align: justify;
+    width: 100%;
   }
 }
 @media screen and (max-width: 720px) {

@@ -119,6 +119,7 @@ footer {
 
 /*mobile*/
     {
+    /*nav*/
     nav {
         img {
             width: 80px;
@@ -130,7 +131,30 @@ footer {
         font-size: 1rem;
         top: 15%;
     }
+    /*Nosotros*/
+    #nosotros{
+        div{
+            padding: 1rem;
+            p{
+                text-align: justify;
+                width: 100%;
+            margin: 0rem;
+            }
+        }
+    }
+
+    /*productos*/
+    #productos{
+        div{
+            padding: 1rem;
+        p{  
+            text-align: justify;
+            width: 100%;
+        }
+    }
+    }
 }
+
 
 @media screen and (max-width: 720px)
 
