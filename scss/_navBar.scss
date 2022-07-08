@@ -6,6 +6,10 @@ header {
     z-index: 1;
 
     .nav {
+        button{
+            background: map-get($colors ,fColor );
+            border: 0.1rem, black;
+        }
         height: 6rem;
         #logo {
             font-size: 1.9rem;

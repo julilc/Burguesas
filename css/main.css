@@ -10,6 +10,10 @@ header .nav {
   flex-direction: row;
   background: #ec1f26;
 }
+header .nav button {
+  background: #710000;
+  border: 0.1rem, black;
+}
 header .nav #logo {
   font-size: 1.9rem;
   color: #e5bf27;
