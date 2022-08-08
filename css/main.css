@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Quicksand:wght@300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap");
-.titleSection, #productos h2, #nosotros h2 {
+.titleSection, #contacto h2, #ubicaciones h2, #productos h2, #nosotros h2 {
   border-bottom: 0.2rem solid;
   bottom: 0;
 }
@@ -126,25 +126,72 @@ main .textoEncima #sabor {
   border-bottom-color: #e5bf27;
 }
 
+/*ubicaciones*/
+#ubicaciones h2 {
+  border-bottom-color: #710000;
+}
+#ubicaciones article {
+  display: flex;
+  flex-direction: column;
+}
+#ubicaciones article iframe {
+  width: 100vw;
+  height: 70vh;
+}
+#ubicaciones article #direcciones {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+#ubicaciones article #direcciones h3 {
+  text-align: left;
+}
+
+/*contacto*/
+#contacto {
+  height: 80vh;
+}
+#contacto h2 {
+  border-bottom-color: #009d00;
+}
+#contacto article {
+  background-color: black;
+}
+
 footer {
   background: #ec1f26;
 }
 
 @media screen and (max-width: 520px) {
+  /*mobile*/
+  header {
+    height: 1vh;
+  }
+
   #titulo {
     font-size: 2rem;
     top: 10%;
   }
 
   /*nav*/
-  nav img {
+  nav div #logo {
+    text-align: center;
+    width: 80%;
+    padding-left: 4rem;
+  }
+  nav div #logo img {
     width: 80px;
     height: 70px;
   }
+  nav div button {
+    width: 10%;
+  }
 
   /*Nosotros*/
+  #nosotros h2 {
+    width: 100%;
+  }
   #nosotros div {
-    padding: 1rem;
+    padding: 0rem;
   }
   #nosotros div p {
     text-align: justify;
@@ -153,12 +200,22 @@ footer {
   }
 
   /*productos*/
+  #productos h2 {
+    width: 100%;
+  }
   #productos div {
-    padding: 1rem;
+    padding: 0rem;
   }
   #productos div p {
     text-align: justify;
     width: 100%;
+  }
+
+  #ubicaciones h2 {
+    width: 100%;
+  }
+  #ubicaciones article iframe {
+    height: 90vh;
   }
 }
 @media screen and (max-width: 720px) {

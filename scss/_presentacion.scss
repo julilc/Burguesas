@@ -10,15 +10,15 @@ nav {
         color: map-get($colors, secondaryColor);
     }
 
-    #navbarNav{
+    #navbarNav {
         ul {
-        li {
-            a:hover   {
-                color: map-get($colors, secondaryColor);
+            li {
+                a:hover {
+                    color: map-get($colors, secondaryColor);
+                }
             }
         }
     }
-}
 }
 
 main {
@@ -121,15 +121,61 @@ main {
     }
 }
 
+/*ubicaciones*/
+#ubicaciones {
+    h2 {
+        @extend .titleSection;
+        border-bottom-color: map-get($colors, fColor);
+    }
+
+    article {
+
+        display: flex;
+        flex-direction: column;
+
+        iframe {
+            width: 100vw;
+            height: 70vh;
+        }
+
+        #direcciones {
+            margin-top: 1rem;
+            align-self: flex-start;
+
+            h3 {
+                text-align: left;
+            }
+        }
+
+    }
+
+}
+
+/*contacto*/
+#contacto {
+    height: 80vh;
+    h2 {
+        @extend .titleSection;
+        border-bottom-color: map-get($colors, green);
+    }
+    article{
+        background-color: black;
+    }
+}
 
 footer {
     background: map-get($colors , primaryColor);
 }
 
-@media screen and (max-width: 520px)
 
-/*mobile*/
-    {
+
+@media screen and (max-width: 520px) {
+
+    /*mobile*/
+    header {
+        height: 1vh;
+    }
+
     #titulo {
         font-size: 2rem;
         top: 10%;
@@ -138,17 +184,34 @@ footer {
 
     /*nav*/
     nav {
-        img {
-            width: 80px;
-            height: 70px;
+        div {
+            #logo {
+                text-align: center;
+                width: 80%;
+                padding-left: 4rem;
+
+                img {
+                    width: 80px;
+                    height: 70px;
+                }
+            }
+
+            button {
+                width: 10%;
+            }
         }
+
     }
 
 
     /*Nosotros*/
     #nosotros {
+        h2 {
+            width: 100%;
+        }
+
         div {
-            padding: 1rem;
+            padding: 0rem;
 
             p {
                 text-align: justify;
@@ -160,12 +223,28 @@ footer {
 
     /*productos*/
     #productos {
+        h2 {
+            width: 100%;
+        }
+
         div {
-            padding: 1rem;
+            padding: 0rem;
 
             p {
                 text-align: justify;
                 width: 100%;
+            }
+        }
+    }
+
+    #ubicaciones {
+        h2 {
+            width: 100%;
+        }
+
+        article {
+            iframe {
+                height: 90vh;
             }
         }
     }
