@@ -144,6 +144,17 @@ main {
 
             h3 {
                 text-align: left;
+                font-weight: bold;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                font-size: 1.3rem;
+                div:first-of-type{
+                    padding-right: 30rem;
+                    padding-left: 2rem;
+                }
+
             }
         }
 
@@ -160,6 +171,15 @@ main {
     }
     article{
         background-color: black;
+    }
+}
+
+/*truck*/
+#truck {
+    h2 {
+        @extend .titleSection;
+        border-bottom-color: map-get($colors, fColor);
+
     }
 }
 
@@ -246,6 +266,33 @@ footer {
             iframe {
                 height: 90vh;
             }
+        }
+        #direcciones {
+            #listaDirec {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.3rem;
+                div{
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    ul{
+                        margin-top: 0.3;
+                    } li{
+                        margin: 0.3rem;
+                    }
+                }
+
+            }
+        }
+    }
+    #contacto{
+        h2{
+            width: 100%;
+        }
+    }
+    #truck{
+        h2{
+            width: 100%;
         }
     }
 }
