@@ -146,11 +146,13 @@ main {
                 text-align: left;
                 font-weight: bold;
             }
+
             div {
                 display: flex;
                 flex-direction: row;
                 font-size: 1.3rem;
-                div:first-of-type{
+
+                div:first-of-type {
                     padding-right: 30rem;
                     padding-left: 2rem;
                 }
@@ -164,13 +166,52 @@ main {
 
 /*contacto*/
 #contacto {
-    height: 80vh;
+
     h2 {
         @extend .titleSection;
         border-bottom-color: map-get($colors, green);
     }
-    article{
+
+    article {
         background-color: black;
+
+        p {
+            color: white;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+                a {
+
+                    img {
+                        width: 8.5rem;
+                        height: 5.7rem;
+                    }
+
+
+                }
+
+
+
+            }
+
+            a:hover {
+                img {
+                    width: 9.6rem;
+                    height: 7rem;
+                }
+
+            }
+        }
+
     }
 }
 
@@ -257,6 +298,8 @@ footer {
         }
     }
 
+    /*ubicaciones*/
+
     #ubicaciones {
         h2 {
             width: 100%;
@@ -267,17 +310,22 @@ footer {
                 height: 90vh;
             }
         }
+
         #direcciones {
             #listaDirec {
                 display: flex;
                 flex-direction: column;
                 font-size: 1.3rem;
-                div{
+
+                div {
                     padding-right: 1rem;
                     padding-left: 1rem;
-                    ul{
+
+                    ul {
                         margin-top: 0.3;
-                    } li{
+                    }
+
+                    li {
                         margin: 0.3rem;
                     }
                 }
@@ -285,18 +333,40 @@ footer {
             }
         }
     }
-    #contacto{
-        h2{
+
+    /*contacto*/
+    #contacto {
+        h2 {
             width: 100%;
         }
+
+        article div {
+            flex-direction: column;
+        }
     }
-    #truck{
-        h2{
+
+    #truck {
+        h2 {
             width: 100%;
         }
     }
 }
+/*Burguesas Truck*/
+#truck{
+    article{
+      
+    div{
+        width: 100%;
+        text-align: center;
+    }
+    a img{
+        width: 22.5rem;
+        height: 20rem;
+        
+    }
 
+}
+}
 
 @media screen and (max-width: 720px) {
     nav {
