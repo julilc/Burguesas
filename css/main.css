@@ -125,6 +125,10 @@ main .textoEncima #sabor {
 #productos h2 {
   border-bottom-color: #e5bf27;
 }
+#productos h5 {
+  color: black;
+  font-size: 2rem;
+}
 
 /*ubicaciones*/
 #ubicaciones h2 {
@@ -188,6 +192,14 @@ main .textoEncima #sabor {
 /*truck*/
 #truck h2 {
   border-bottom-color: #710000;
+}
+#truck article {
+  background-color: black;
+  height: 70vh;
+}
+
+#truckLogo {
+  animation: bounce 0.9s infinite;
 }
 
 footer {

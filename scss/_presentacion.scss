@@ -119,6 +119,10 @@ main {
         @extend .titleSection;
         border-bottom-color: map-get($colors, secondaryColor);
     }
+    h5{
+        color: black;
+        font-size: 2rem;
+    }
 }
 
 /*ubicaciones*/
@@ -222,8 +226,14 @@ main {
         border-bottom-color: map-get($colors, fColor);
 
     }
+    article{
+    background-color: black;
+    height: 70vh;
+    }
 }
-
+#truckLogo{
+    animation: bounce .9s  infinite;
+}
 footer {
     background: map-get($colors , primaryColor);
 }
