@@ -238,7 +238,12 @@ footer {
     background: map-get($colors , primaryColor);
 }
 
-
+@media screen and (max-width: 400px) {
+    #truckLogo{
+        width: 16rem;
+        height: 14rem;
+    }
+}
 
 @media screen and (max-width: 520px) {
 
@@ -370,8 +375,8 @@ footer {
         text-align: center;
     }
     a img{
-        width: 22.5rem;
-        height: 20rem;
+        width: 20.5rem;
+        height: 18rem;
         
     }
 

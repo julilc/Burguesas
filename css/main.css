@@ -206,6 +206,12 @@ footer {
   background: #ec1f26;
 }
 
+@media screen and (max-width: 400px) {
+  #truckLogo {
+    width: 16rem;
+    height: 14rem;
+  }
+}
 @media screen and (max-width: 520px) {
   /*mobile*/
   header {
@@ -297,8 +303,8 @@ footer {
   text-align: center;
 }
 #truck article a img {
-  width: 22.5rem;
-  height: 20rem;
+  width: 20.5rem;
+  height: 18rem;
 }
 
 @media screen and (max-width: 720px) {
