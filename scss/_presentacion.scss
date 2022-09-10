@@ -115,11 +115,19 @@ main {
 
 /*Productos*/
 #productos {
+    #calidad {
+        font-weight: bold;
+    }
+    #elaboracion{
+        font-weight: bold;
+    }
+
     h2 {
         @extend .titleSection;
         border-bottom-color: map-get($colors, secondaryColor);
     }
-    h5{
+
+    h5 {
         color: black;
         font-size: 2rem;
     }
@@ -226,20 +234,23 @@ main {
         border-bottom-color: map-get($colors, fColor);
 
     }
-    article{
-    background-color: black;
-    height: 70vh;
+
+    article {
+        background-color: black;
+        height: 70vh;
     }
 }
-#truckLogo{
-    animation: bounce .9s  infinite;
+
+#truckLogo {
+    animation: bounce .9s infinite;
 }
+
 footer {
     background: map-get($colors , primaryColor);
 }
 
 @media screen and (max-width: 400px) {
-    #truckLogo{
+    #truckLogo {
         width: 16rem;
         height: 14rem;
     }
@@ -366,21 +377,23 @@ footer {
         }
     }
 }
-/*Burguesas Truck*/
-#truck{
-    article{
-      
-    div{
-        width: 100%;
-        text-align: center;
-    }
-    a img{
-        width: 20.5rem;
-        height: 18rem;
-        
-    }
 
-}
+/*Burguesas Truck*/
+#truck {
+    article {
+
+        div {
+            width: 100%;
+            text-align: center;
+        }
+
+        a img {
+            width: 20.5rem;
+            height: 18rem;
+
+        }
+
+    }
 }
 
 @media screen and (max-width: 720px) {

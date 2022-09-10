@@ -122,6 +122,12 @@ main .textoEncima #sabor {
 }
 
 /*Productos*/
+#productos #calidad {
+  font-weight: bold;
+}
+#productos #elaboracion {
+  font-weight: bold;
+}
 #productos h2 {
   border-bottom-color: #e5bf27;
 }
